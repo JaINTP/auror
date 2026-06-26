@@ -27,7 +27,7 @@ All notable shifts in this project's architecture, dependencies, and implementat
 - Resolved home directory dynamically using the `home` crate instead of checking the `HOME` environment variable with a hardcoded user fallback in both `aurord` and `aurorc` TUI.
 - Resolved user-specific UNIX socket path using `XDG_RUNTIME_DIR` environment variable instead of hardcoding user ID `1000`.
 - Corrected repository folder name references from `aur_updater` to `auror` in both `PKGBUILD` and `aurord.service`.
-- Updated `PKGBUILD` to build dynamically from the current directory using `$STARTDIR` instead of a hardcoded path.
+- Updated `PKGBUILD` to build dynamically from the current directory using `$PWD` instead of a hardcoded path.
 
 ### Added (Dependencies)
 - Added `home = "0.5"` to `aurord` and `aurorc` dependencies.

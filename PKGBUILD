@@ -1,7 +1,7 @@
 # Maintainer: JaINTP <jaintp@example.com>
 pkgname=auror-git
 _pkgname=auror
-pkgver=0.1.0.r0.g0000000
+pkgver=0.1.0.r1.f434a42
 pkgrel=1
 pkgdesc="Arch Linux AUR local repository background daemon (aurord) and TUI dashboard (aurorc)"
 arch=('x86_64' 'aarch64')
@@ -11,7 +11,7 @@ depends=('gcc-libs' 'glibc')
 makedepends=('cargo' 'git')
 provides=('auror' 'aurord' 'aurorc')
 conflicts=('aur-updater' 'aurd' 'aurc' 'auror' 'aurord' 'aurorc')
-source=("$_pkgname::git+file://$STARTDIR")
+source=("$_pkgname::git+file://$PWD")
 sha256sums=('SKIP')
 options=(!lto)
 
