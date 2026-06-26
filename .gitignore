@@ -1,0 +1,21 @@
+# Cargo build artifacts
+/target
+
+# Backup and swap files
+**/*.rs.bk
+*~
+*.swp
+*.swo
+
+# IDE configurations
+.idea/
+.vscode/
+
+# OS metadata
+.DS_Store
+
+# makepkg build outputs
+/pkg/
+/src/
+/aur_updater/
+*.pkg.tar.zst

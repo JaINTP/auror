@@ -1,0 +1,13 @@
+[Unit]
+Description=Arch User Repository Update Daemon (aurord)
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=%h/git/repos/auror/target/release/aurord
+Restart=always
+RestartSec=10
+Environment=PATH=/usr/bin:/usr/local/bin:/usr/bin/core_perl
+
+[Install]
+WantedBy=default.target
